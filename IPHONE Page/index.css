@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(3, 3, 3);
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.container{
+    width: 80%;
+    height: 95vh;
+    margin: auto;
+    position: relative;
+    padding: 20px 0 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto
+}
+nav img{
+    height: 40px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+.content{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .image img{
+    width: 200px;
+}
+.content .text{
+    width: 50%;
+}
+.content .text h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.content .text p{
+    margin-bottom: 20px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.content .text button{
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.images{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translatex(-50%);
+}
+.images img{
+    width: 50px;
+    transition: 0.5s;
+}
+
+ul li:hover, .images img:hover, button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+
+@media (max-width: 690px){
+    .images img{
+        width: 40px
+    }
+}
