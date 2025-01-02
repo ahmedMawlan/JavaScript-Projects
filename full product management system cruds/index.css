@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+body{
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    background-color: #161111;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.input-div input{
+    width: 20%;
+}
+input:focus{
+    background-color: #0c0e0d;
+}
+#total{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    background-color: #47037e;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+button:hover{
+    background-color: #6705b8;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.searchBlock{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchBlock button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table th{
+    text-transform: uppercase;
+}
+table button{
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+}
